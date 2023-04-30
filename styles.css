@@ -11,26 +11,30 @@ body {
   background-color: #ffea20;
 }
 
-header {
-  display: flex;
-  justify-content: center;
+.width-central {
+  margin: 0 auto;
+  max-width: 1256px;
+}
+
+.sekundarni-naslov {
+  font-size: 2.8rem;
 }
 
 /* NavBar section */
 
 .navbar {
-  margin: 0;
   width: 100%;
   background-color: #2c2e43;
   color: #b2b1b9;
 }
 
 .navbar.sticky {
-  z-index: 5;
-  margin: 5px;
-  border-radius: 25px;
-  opacity: 0.3;
+  z-index: 8;
+  margin-top: 5px;
+  border-radius: 50px;
+  opacity: 0.4;
   position: fixed;
+  transition: 0.5s;
 }
 .navbar.sticky:hover {
   margin: 0;
@@ -41,8 +45,6 @@ header {
 }
 
 .navbar-content {
-  margin: 0 auto;
-  max-width: 1256px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,19 +78,9 @@ header {
   position: relative;
 }
 
-.navbar ul li a::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background: #ffea20;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.3s;
-}
-
-.navbar ul li a:hover::after {
-  width: 100%;
+.navbar ul li a:hover {
+  color: #ffea20;
+  transition: 0.5s;
 }
 
 .hamburger-menu {
@@ -126,11 +118,9 @@ header {
 /* home section */
 
 .container-1 {
-  max-width: 1256px;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(523px, 1fr));
-  margin: 0 auto;
   padding-top: 20px;
   background-image: url(imgs/CSGO-Wallpaper-Desktop.jpg);
   background-size: cover;
@@ -182,97 +172,133 @@ header {
   cursor: pointer;
 }
 
-/* sekcija 2 */
+/* About section */
 
 #about {
   background-color: #2c2e43;
 }
 
-.container-2 {
-  max-width: 1256px;
-  height: 100%;
-  color: #b2b1b9;
-  margin: 0px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-}
-
 .about-naslov {
-  max-width: 1100px;
   height: 100%;
   color: #b2b1b9;
-  margin: 0px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 30px;
   text-align: center;
-}
-
-.about-naslov h1 {
-  font-size: 2.8rem;
 }
 
 .about-naslov span {
   color: #ffea20;
 }
 
-.card {
-  position: relative;
-  border-right: 2px solid#b2b1b9;
-  border-left: 2px solid#b2b1b9;
-  border-collapse: collapse;
+.about-tekst {
+  color: #b2b1b9;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
 }
 
-.card:hover {
+.about-tekst h2 {
+  color: #ffea20;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-tekst button {
+  margin: 0 auto;
+  font-size: 1.3rem;
+  padding: 10px;
+  border: 2px solid #ffea20;
+  border-radius: 7px;
+  background-color: transparent;
+  margin-top: 10px;
+  color: #ffea20;
+  width: 180px;
+}
+
+.about-tekst button:hover {
   background-color: #ffea20;
-  transition: 0.5s;
+  color: #2c2e43;
+  transition: 0.3s;
   cursor: pointer;
 }
 
-.read-more {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5rem;
-  font-weight: 600;
+/* Card section */
+
+.card-naslov {
+  color: #b2b1b9;
   text-align: center;
-  color: #2c2e43;
+  padding: 30px;
 }
 
-.card:hover .read-more {
-  display: block;
+.card-naslov span {
+  color: #ffea20;
+}
+
+.cards-container {
+  color: #b2b1b9;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+}
+
+.img-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.card {
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.card1 {
+  background-image: url(imgs/CSGOlogo.jpg);
   transition: 0.5s;
 }
 
-.card:hover .image-container {
-  opacity: 0.2;
+.card1:hover {
+  background-image: url(imgs/CSGO2.jpg);
+  transition: 0.5s;
 }
 
-.image-container {
-  font-size: 1rem;
-  max-width: 250px;
-  /* margin: 25px 0; */
-  /* border-radius: 7px; */
-  text-align: center;
-  position: relative;
-  padding: 10px;
+.card2 {
+  background-image: url(imgs/ValorantLogo.jpg);
+  transition: 0.5s;
 }
 
-.image-container img {
+.card2:hover {
+  background-image: url(imgs/Valorantslika.jpg);
+  transition: 0.5s;
+}
+
+.card3 {
+  background-image: url(imgs/Lollogo.jpg);
+  transition: 0.5s;
+}
+
+.card3:hover {
+  background-image: url(imgs/Lolslika.jpg);
+  transition: 0.5s;
+}
+
+/* .card-img-container img {
   width: 100%;
-  border-radius: 7px;
-}
-
-.image-container p {
-  padding: 10px;
-}
+} */
 
 @media screen and (max-width: 1045px) {
   .header-img img {
     width: 400px;
+  }
+  .navbar-content {
+    justify-content: space-around;
   }
 
   .header-img {
@@ -292,17 +318,13 @@ header {
 
   /* navbar tableti */
 
-  .navbar-content {
-    justify-content: space-around;
-  }
-
   .nav-menu {
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 10;
+    z-index: 15;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -330,18 +352,29 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  .container-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .about-tekst {
+    text-align: center;
   }
 
   .header-text h1 {
     font-size: 2.8rem;
   }
 
+  .sekundarni-naslov {
+    font-size: 2.5rem;
+  }
+
   .header-img img {
     width: 300px;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 220px;
+    height: 220px;
   }
 }
