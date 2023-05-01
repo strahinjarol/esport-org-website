@@ -16,7 +16,6 @@ function hide() {
 }
 
 // sticky navbar
-
 const navBar = document.querySelector(".navbar");
 
 window.onscroll = () => {
@@ -24,3 +23,5 @@ window.onscroll = () => {
     ? navBar.classList.add("sticky")
     : navBar.classList.remove("sticky");
 };
+
+// carousel

@@ -14,6 +14,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- SwiperJS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <!-- Css link -->
     <link rel="stylesheet" href="styles.css" />
     <title>Gsense-esport</title>
@@ -30,6 +35,9 @@
           <li class="nav-item"><a href="#Home">About</a></li>
           <li class="nav-item"><a href="#Home">Shop</a></li>
           <li class="nav-item"><a href="#Home">Contact</a></li>
+          <li class="nav-item">
+            <a href="#Home"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
+          </li>
           <div class="xmenu"><i class="fa fa-times fa-2xl"></i></div>
         </ul>
         <div class="social-media-icons">
@@ -97,7 +105,83 @@
         </div>
       </div>
     </section>
+    <!-- shop section -->
+    <section id="shop">
+      <div class="shop-container width-central">
+        <div class="shop-naslov">
+          <h2 class="sekundarni-naslov">Shop</h2>
+        </div>
+      </div>
+      <div class="glider">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="imgs/Product1img1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/Product2img1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/Product3img1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/Product4img1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/Product6img1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/Product5img1.jpg" alt="" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    <!-- JS -->
     <script src="main.js"></script>
+    <!-- Swiper JS fajl -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+
+        breakpoints: {
+          962: {
+            slidesPerView: 3,
+          },
+          600: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
