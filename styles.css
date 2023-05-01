@@ -295,13 +295,17 @@ body {
 }
 
 /* Shop section */
+
+#shop {
+  padding: 30px;
+}
 .shop-container {
   color: #2c2e43;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 30px;
 }
 
 /* slajder */
@@ -323,11 +327,15 @@ body {
   width: 100%;
 }
 
-.swiper-button-prev::after {
+.swiper-button-prev {
   color: #ffea20;
 }
-.swiper-button-next::after {
+.swiper-button-next {
   color: #ffea20;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffea20;
 }
 
 @media screen and (max-width: 1045px) {
