@@ -7,7 +7,7 @@
 }
 
 .navbar.sticky {
-  z-index: 8;
+  z-index: 15;
   margin-top: 5px;
   border-radius: 50px;
   opacity: 0.4;
@@ -109,7 +109,7 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: 15;
+    z-index: 100;
     flex-direction: column;
     justify-content: center;
     align-items: center;

@@ -21,7 +21,6 @@
     />
     <!-- Css link -->
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
     <title>Gsense-esport</title>
   </head>
 
@@ -35,7 +34,7 @@
           <li class="nav-item"><a href="#Home">Home</a></li>
           <li class="nav-item"><a href="#Home">About</a></li>
           <li class="nav-item"><a href="#Home">Shop</a></li>
-          <li class="nav-item"><a href="#Home">Contact</a></li>
+          <li class="nav-item"><a href="#about">Contact</a></li>
           <li class="nav-item">
             <a href="#Home"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
           </li>
@@ -64,6 +63,7 @@
         </div>
       </div>
     </section>
+
     <!-- about sction -->
     <section id="about">
       <div class="about-naslov width-central">
@@ -106,6 +106,7 @@
         </div>
       </div>
     </section>
+
     <!-- shop section -->
     <section id="shop">
       <div class="shop-container width-central">
@@ -120,22 +121,22 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="imgs/Product1img1.jpg" alt="" />
+              <img src="imgs/Product1img1.jpg" alt="product1" />
             </div>
             <div class="swiper-slide">
-              <img src="imgs/Product2img1.jpg" alt="" />
+              <img src="imgs/Product2img1.jpg" alt="product2" />
             </div>
             <div class="swiper-slide">
-              <img src="imgs/Product3img1.jpg" alt="" />
+              <img src="imgs/Product3img1.jpg" alt="product3" />
             </div>
             <div class="swiper-slide">
-              <img src="imgs/Product4img1.jpg" alt="" />
+              <img src="imgs/Product4img1.jpg" alt="product4" />
             </div>
             <div class="swiper-slide">
-              <img src="imgs/Product6img1.jpg" alt="" />
+              <img src="imgs/Product6img1.jpg" alt="product5" />
             </div>
             <div class="swiper-slide">
-              <img src="imgs/Product5img1.jpg" alt="" />
+              <img src="imgs/Product5img1.jpg" alt="product6" />
             </div>
           </div>
           <!-- If we need pagination -->
@@ -151,6 +152,52 @@
         <button type="button" class="btn">Shop now >></button>
       </div>
     </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="contact-container width-central">
+        <h2 class="sekundarni-naslov">Let's get in touch</h2>
+        <div class="contact-info">
+          <div class="location flex-col">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span class="info-text">Bar, Montenegro</span>
+          </div>
+          <div class="phone flex-col">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <span class="info-text">+381 65 555 333</span>
+          </div>
+          <div class="mail flex-col">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <span class="info-text">gsense@gmail.com</span>
+          </div>
+        </div>
+        <button type="button" class="btn">Contact Us</button>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <div class="footer">
+      <div class="footer-content width-central">
+        <div class="footer-logo">
+          <img src="imgs/Logozuti2.png" alt="Logo png" />
+        </div>
+        <div class="footer-social-media">
+          <h3>Folow <span>Us</span></h3>
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-twitch"></i></a>
+            <a href="#"><i class="fa-brands fa-reddit-alien"></i></a>
+          </div>
+        </div>
+        <div class="newsletter central-content">
+          <input type="text" />
+          <button type="button">Subscribe</button>
+        </div>
+      </div>
+    </div>
     <!-- JS -->
     <script src="main.js"></script>
     <!-- Swiper JS fajl -->
@@ -185,5 +232,5 @@
         },
       });
     </script>
-  </body>
+  </footer>
 </html>
