@@ -110,6 +110,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .footer-content img {
+    width: 150px;
+  }
   .footer-icons a {
     font-size: 1.8rem;
     padding: 10px;
@@ -121,5 +124,9 @@
 
   .footer-icons {
     padding-top: 10px;
+  }
+
+  .newsletter input {
+    max-width: 150px;
   }
 }
