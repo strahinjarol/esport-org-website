@@ -112,7 +112,7 @@ body {
   margin-bottom: 2rem;
   padding: 3rem;
   border-radius: 15px;
-  width: 75%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,19 +121,56 @@ body {
 .form-content {
   width: 90%;
 }
+.form-title {
+  color: #ffea20;
+  padding-bottom: 1rem;
+}
+
+.input-container span {
+  font-size: 1rem;
+  color: #ffea20;
+}
 
 .form input {
   width: 100%;
-  padding: 1.5rem;
+  padding: 1.2rem;
   background: none;
   color: #b2b1b9;
   border: 1px solid #b2b1b9;
   border-radius: 15px;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .form textarea {
   width: 100%;
+  resize: none;
+  background: none;
+  color: #b2b1b9;
+  border: 1px solid #b2b1b9;
+  border-radius: 15px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.2rem;
+}
+
+.form-btn {
+  margin: 0 auto;
+  font-size: 1.3rem;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: transparent;
+  margin-top: 10px;
+  width: 180px;
+  border: 2px solid #ffea20;
+  color: #ffea20;
+}
+
+.form-btn:hover {
+  background-color: #ffea20;
+  color: #2c2e43;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 962px) {
@@ -163,5 +200,10 @@ body {
 
   .sekundarni-naslov {
     font-size: 2.5rem;
+  }
+
+  .form {
+    width: 95%;
+    padding: 1rem;
   }
 }
